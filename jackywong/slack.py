@@ -1,4 +1,0 @@
-"""
-    Slack Context Manager
-"""
-
