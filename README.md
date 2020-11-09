@@ -10,6 +10,13 @@ Pipeline notifier will send messages to your Slack/Discord/Keybase channel once 
 more channels if desired. Feel free to ping me at jacky.wong@vctr.ai. It will send error messages so you can tell what is wrong
 the moment it happens.
 
+# Installation
+
+Simply run: 
+```
+python3 -m pip install pipeline-notifier
+```
+
 # Data Science Bots
 
 As data scientists, you are running a lot of code over a large amount of time. This often means that that you want to be notified about things via mobile while you have applications running in the background. 
@@ -19,7 +26,8 @@ I ended up re-writing this code across a number of organisations.
 ```
 from pipelinenotifier import KeyBaseNotifier
 
-with KeyBaseBot(, "<webhook_url>") as bot:
+# Record your name and the project being worked on to properly track information
+with KeyBaseBot("Bill Gates", "Modelling", "<webhook_url>") as bot:
     # Insert training loop/reader here.
     score = 0.5
     bot.send_message(f"Scored {score}.")
