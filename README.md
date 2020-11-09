@@ -10,6 +10,8 @@ Pipeline notifier will send messages to your Slack/Discord/Keybase channel once 
 more channels if desired. Feel free to ping me at jacky.wong@vctr.ai. It will send error messages so you can tell what is wrong
 the moment it happens.
 
+![](carbon.png)
+
 # Installation
 
 Simply run: 
