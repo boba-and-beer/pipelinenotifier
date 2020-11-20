@@ -13,7 +13,7 @@ class KeyBaseBot:
     def send_message(self, message: str, include_time: bool=True):
         """Send Keybase message"""
         if include_time:
-            current_Time = self.get_current_time()
+            current_time = self.get_current_time()
             response = requests.post(self.webhook_url, data=f"{current_time}: {self.project_name} | " + message)
         else:
             response = requests.post(self.webhook_url, data=f"{self.project_name} | " + message)
